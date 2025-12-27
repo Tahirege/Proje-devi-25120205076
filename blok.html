@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blok Sayfam</title>
+
+    <style>
+        body{
+            background: linear-gradient(#1e1e2f, #2b2b44); 
+            color: whitesmoke;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            padding: 10px;
+            text-align: center;
+            background-color: rgb(15, 23, 42); 
+            color:whitesmoke;
+        }
+        header h3 {
+            padding-top:15px;
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-size: 40px;
+            font-family: Arial;
+            font-weight: 500;
+        }
+        button {
+            padding: 10px;
+            color: rgb(0, 0, 0);
+            background-color: #a5a5f0;
+            border-style: solid;
+            border: 0;
+            border-radius: 25px;
+        }
+        button:hover {
+            cursor: pointer;
+            background-color: #b4b4e9;
+        }
+        .kutu {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+
+        }
+
+        .iç-bölme {
+            border-color: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            
+        }
+
+        .iç-bölme h3 {
+            margin-top: 0;
+            font-size: 23px;
+            font-weight: bold;
+            text-decoration: underline;
+            text-decoration-color: aqua;
+        }
+
+        .iç-bölme p {
+            font-size: 20px;
+        }
+        .iç-bölme a {
+            font-size: 20px;
+        }
+        .iç-bölme a:hover {
+            color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h3>
+            Blok Sayfam
+        </h3>
+        <p>Bu sayfada ilgimi çeken konular hakkında bilgiler paylaşıyorum. Umarım seversiniz.</p>
+    </header>
+
+<div class="kutu">
+  <div class="iç-bölme">
+    <h3>Algoritma Nedir?</h3>
+    <p>
+      Algoritma, bir problemi çözmek ya da bir işi yapmak için izlenen adım adım ve mantıklı yol demektir.
+Bu adımların her biri açık, net ve sıralı olmak zorundadır; “sonra bakarız” algoritmada yoktur.
+      <span class="dots">...</span>
+      <span class="more" style="display: none;">
+        Günlük hayatta yemek tarifi okumak bile aslında bir algoritma uygulamaktır.
+        Bilgisayarlarda ise algoritma, programın ne yapacağını belirleyen asıl beyin kısmıdır.
+        İyi bir algoritma, daha az zaman ve daha az kaynak harcayarak doğru sonuca ulaşır.
+        Programlama dilleri değişir ama sağlam algoritma bilgisi her zaman iş yapar.
+      </span>
+    </p>
+    <button onclick="toggleText(this)">Devamını gör</button>
+  </div>
+</div>
+
+<div class="kutu">
+  <div class="iç-bölme">
+    <h3>C Dili Neden Önemlidir?</h3>
+    <p>
+      C dili, programlamanın temelini anlamak için en önemli dillerden biridir.
+        Donanıma yakın çalıştığı için bilgisayarın belleği ve işlemciyi nasıl 
+        kullandığını öğretir.
+      <span class="dots">...</span>
+      <span class="more" style="display: none;">
+        Birçok işletim sistemi, sürücü ve gömülü sistem C diliyle yazılmıştır.
+        C öğrenen biri, diğer programlama dillerini çok daha kolay kavrar.
+        Hızlı ve verimli programlar yazmaya imkân tanır.
+        Kısacası C dili, yazılım dünyasının bel kemiğidir.
+      </span>
+    </p>
+    <button onclick="toggleText(this)">Devamını gör</button>
+  </div>
+</div>
+
+<div class="kutu">
+  <div class="iç-bölme">
+    <h3>Programlama Nedir?</h3>
+    <p>
+        Programlama, bilgisayara ne yapacağını adım adım anlatma işidir.
+        Bu anlatım, belirli kuralları olan programlama dilleriyle yapılır.
+      <span class="dots">...</span>
+      <span class="more" style="display: none;">
+        Amaç, bir problemi çözmek ya da bir işi otomatik hâle getirmektir.
+        Bilgisayar kendi başına düşünmez, verilen komutları harfiyen uygular.
+        İyi programlama, sadece kod yazmak değil doğru mantığı kurmaktır.
+        Günümüzde programlama, neredeyse her alanın temel becerilerinden biridir.
+      </span>
+    </p>
+    <button onclick="toggleText(this)">Devamını gör</button>
+  </div>
+</div>
+
+<div class="kutu">
+  <div class="iç-bölme">
+    <h3>Bilgisayar Mühendisliği Nedir?</h3>
+    <p>
+        Bilgisayar mühendisliği, bilgisayarın hem donanımını hem de yazılımını inceleyen bir mühendislik dalıdır.
+        Bu alan, bilgisayarların nasıl çalıştığını en temelden anlamayı amaçlar.
+      <span class="dots">...</span>
+      <span class="more" style="display: none;">
+        Algoritmalar, programlama, veri yapıları ve işletim sistemleri temel konularıdır.
+        Aynı zamanda işlemci, bellek ve gömülü sistemler gibi donanım tarafıyla da ilgilenir.
+        Bilgisayar mühendisi, problemi analiz eder ve en uygun teknik çözümü tasarlar.
+        Yapay zekâ, siber güvenlik ve veri bilimi gibi alanlarda da aktif rol oynar.
+        Kısacası bilgisayar mühendisliği, teknolojinin mutfağında çalışmaktır.
+      </span>
+    </p>
+    <button onclick="toggleText(this)">Devamını gör</button>
+  </div>
+</div>
+
+<script>
+function toggleText(button) {
+  const box = button.closest(".iç-bölme");
+  const dots = box.querySelector(".dots");
+  const more = box.querySelector(".more");
+
+  const isOpen = dots.style.display === "none";
+
+  dots.style.display = isOpen ? "inline" : "none";
+  more.style.display = isOpen ? "none" : "inline";
+  button.innerText = isOpen ? "Devamını gör" : "Kapat";
+}
+</script>
+
+</body>
+</html>
+</body>

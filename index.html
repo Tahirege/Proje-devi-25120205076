@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kişisel Web Sayfam</title>
+
+    <style>
+        body {
+            background: linear-gradient(#1e1e2f, #2b2b44); 
+            color: whitesmoke;
+            margin: 0;
+            padding: 0;
+
+        }
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            cursor:pointer;
+        }
+        button {
+            padding: 10px;
+            color: rgb(0, 0, 0);
+            background-color: #a5a5f0;
+            border-style: solid;
+            border: 0;
+            border-radius: 25px;
+        }
+        button:hover {
+            cursor: pointer;
+            background-color: #b4b4e9;
+        }
+        header {
+            padding: 10px;
+            text-align: center;
+            background-color: rgb(15, 23, 42); 
+            color:whitesmoke;
+        }
+        header h3 {
+            padding-top:15px;
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-size: 40px;
+            font-family: Arial;
+            font-weight: 500;
+        }
+
+        header p {
+            font-size: 20px;
+            opacity: 0.7;
+            margin-bottom: 0;
+        }
+
+        .navigasyon {
+            text-align: center;
+            background-color: rgb(56, 62, 73);
+        }
+        .navigasyon a {
+            text-decoration: none;
+            margin: 20px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .navigasyon a:hover {
+            color: aqua;
+        }
+        .kutu {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+
+        }
+
+        .iç-bölme {
+            border-color: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            
+        }
+
+        .iç-bölme h3 {
+            margin-top: 0;
+            font-size: 23px;
+            font-weight: bold;
+            text-decoration: underline;
+            text-decoration-color: aqua;
+        }
+
+        .iç-bölme p {
+            font-size: 20px;
+        }
+        .iç-bölme a {
+            font-size: 20px;
+        }
+        .iç-bölme a:hover {
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h3>Tahir Ege Baybür</h3>
+        <p>Bilgisayar Mühendisliği Bölümü Öğrencisi | 1.Sınıf</p>
+        <p>C, Python, HTML, CSS, JavaScript</p>
+    </header>
+
+    <div class="navigasyon">
+        <a href="#hakkımda">Hakkımda</a>
+        <a href="#projeler">Projeler</a>
+        <a href="#blok">Blok</a>
+        <a href="#iletişim">İletişim</a>
+    </div>
+    <div class="kutu">
+        <div class="iç-bölme" id="hakkımda">
+            <h3>Hakkımda</h3>
+            <p>İstanbul Medeniyet Üniversitesi Bilgisayar Mühendisliği Bölümü 1. sınıf öğrencisiyim. 
+                Matematiğe ve programlamaya özel bir ilgim var; özellikle problem çözme ve mantık 
+                kurma süreçlerinden keyif alıyorum. Üniversite eğitimim boyunca algoritmalar, veri 
+                yapıları ve yazılım temelleri üzerine kendimi sürekli geliştirmeyi hedefliyorum. 
+                Uzun vadede makine öğrenmesini ileri seviyede öğrenerek bu bilgiyi tıbbi cihazlar ve 
+                sağlık teknolojileri alanında kullanmak istiyorum. Amacım, teknolojiyi insan sağlığına 
+                doğrudan katkı sağlayan çözümler üretmek için bir araç hâline getirmek. Bu doğrultuda hem 
+                akademik hem de pratik alanda disiplinli bir şekilde çalışmayı planlıyorum.
+</p>
+        </div>
+    </div>
+
+    <div class="kutu">
+        <div class="iç-bölme" id="projeler">
+            <h3>Projeler</h3>
+            <a href="https://github.com/Tahirege/C-language-projects" target="_blank">C Dili Projeleri</a>
+            <br>
+            <a href="https://github.com/Tahirege" target="_blank">Github Sayfam</a>
+        </div>
+    </div>
+    <div class="kutu">
+        <div class="iç-bölme" id="blok">
+            <h3>Blok Sayfam</h3>
+            <p>Bloğuma bu <a href="blok.html" target="_blank" title="blok linki" style="text-decoration: underline;">linkten</a> ulaşabilirsiniz. Orada ilgimi çeken konular hakkında yazılar paylaşıyorum.</p>
+        </div>
+    </div>
+
+    <div class="kutu">
+        <div class="iç-bölme" id="iletişim">
+            <h3>İletişim</h3>
+            <p id="mail" style="color:yellow;"></p>
+            <button onclick="mailGoster()">Maili Göster</button>
+        </div>
+    </div>
+
+    <script>
+        function mailGoster() {
+            document.getElementById("mail").innerHTML =
+                "tahirege3221@gmail.com";
+        }
+    </script>
+
+</body>
+</html>
