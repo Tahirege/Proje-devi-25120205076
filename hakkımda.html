@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hakkımda</title>
+
+    <style>
+        body{
+            background: linear-gradient(#1e1e2f, #2b2b44); 
+            color: whitesmoke;
+            margin: 0;
+            padding: 0;
+        }
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+        header {
+            padding: 10px;
+            text-align: center;
+            background-color: rgb(15, 23, 42); 
+            color:whitesmoke;
+        }
+        header h3 {
+            padding-top:15px;
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-size: 40px;
+            font-family: Arial;
+            font-weight: 500;
+        }
+        header p {
+            font-size: 20px;
+            opacity: 0.7;
+            margin: 0;
+        }
+        .kutu {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+        }
+        .iç-bölme h3 {
+            margin-top: 0;
+            font-size: 23px;
+            font-weight: bold;
+            text-decoration: underline;
+            text-decoration-color: aqua;
+        }
+        .iç-bölme p {
+            font-size: 20px;
+            line-height: 1.7;
+        }
+        button {
+            padding: 10px;
+            background-color: #a5a5f0;
+            border: 0;
+            border-radius: 25px;
+            color: black;
+        }
+        button:hover {
+            cursor: pointer;
+            background-color: #b4b4e9;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h3>Hakkımda</h3>
+    <p>Kendimi tanıttığım, ne yaptığımı ve ne yapmak istediğimi anlattığım sayfa</p>
+    <a href="https://tahirege.github.io/Proje-devi-25120205076/index.html" style="text-decoration: underline;">Ana sayfaya dön</a>
+</header>
+
+<div class="kutu">
+    <div class="iç-bölme">
+        <h3>Ben Kimim?</h3>
+        <p>
+            İstanbul Medeniyet Üniversitesi Bilgisayar Mühendisliği 1. sınıf öğrencisiyim.
+            Matematik ve programlamaya uzun zamandır ilgi duyuyorum.
+            <span class="dots">...</span>
+            <span class="more" style="display:none;">
+                Bilgisayar mühendisliğini seçmemin sebebi sadece yazılım yazmak değil,
+                bir sistemin en temel parçalarına kadar nasıl çalıştığını anlamak istemem.
+                Bir problemi parçalara ayırıp mantıklı bir çözüm yolu oluşturmak
+                beni motive eden en önemli şeylerden biri.
+                Üniversite sürecinde hem teorik bilgiyi sağlam öğrenmeye
+                hem de pratikte bunu uygulamaya özellikle önem veriyorum.
+            </span>
+        </p>
+        <button onclick="toggleText(this)">Devamını gör</button>
+    </div>
+</div>
+
+<div class="kutu">
+    <div class="iç-bölme">
+        <h3>İlgi Alanlarım</h3>
+        <p>
+            En çok ilgilendiğim alanlar algoritmalar, veri yapıları ve programlama temelleridir.
+            <span class="dots">...</span>
+            <span class="more" style="display:none;">
+                C diliyle çalışmak, bilgisayarın bellek ve işlemciyle nasıl etkileşime
+                girdiğini anlamama yardımcı oluyor.
+                Bunun yanında Python ile problem çözme pratiği yapıyor,
+                HTML, CSS ve JavaScript ile de web tarafında kendimi geliştiriyorum.
+                Satranç ise stratejik düşünme, sabır ve planlama becerilerimi
+                geliştirdiğini düşündüğüm önemli bir uğraş.
+            </span>
+        </p>
+        <button onclick="toggleText(this)">Devamını gör</button>
+    </div>
+</div>
+
+<div class="kutu">
+    <div class="iç-bölme">
+        <h3>Hedeflerim</h3>
+        <p>
+            Kısa vadede amacım, yazılımın temelini gerçekten sağlam öğrenmek.
+            <span class="dots">...</span>
+            <span class="more" style="display:none;">
+                Ezbere kod yazmak yerine, neden o kodun çalıştığını anlayarak
+                ilerlemek istiyorum.
+                Uzun vadede ise makine öğrenmesi ve veri bilimi alanlarında
+                derinleşerek bu bilgileri özellikle sağlık teknolojileri,
+                tıbbi cihazlar ve insan hayatına dokunan projelerde kullanmayı hedefliyorum.
+                Teknolojinin sadece ticari değil, toplumsal fayda üretmesini önemsiyorum.
+            </span>
+        </p>
+        <button onclick="toggleText(this)">Devamını gör</button>
+    </div>
+</div>
+
+<div class="kutu">
+    <div class="iç-bölme">
+        <h3>Bu Siteyi Neden Yaptım?</h3>
+        <p>
+            Öğrendiklerimi düzenli bir şekilde yazıya dökmek ve kendime ait bir arşiv oluşturmak için.
+            <span class="dots">...</span>
+            <span class="more" style="display:none;">
+                Bu siteyi aynı zamanda gelişim sürecimi gözlemleyebileceğim
+                kişisel bir alan olarak görüyorum.
+                Zamanla hem teknik bilgilerimi hem de düşüncelerimi paylaşabileceğim,
+                geriye dönüp baktığımda “nereden nereye gelmişim” diyebileceğim
+                bir platform olmasını istiyorum.
+            </span>
+        </p>
+        <button onclick="toggleText(this)">Devamını gör</button>
+    </div>
+</div>
+
+<script>
+function toggleText(button) {
+    const box = button.closest(".iç-bölme");
+    const dots = box.querySelector(".dots");
+    const more = box.querySelector(".more");
+
+    const isOpen = dots.style.display === "none";
+
+    dots.style.display = isOpen ? "inline" : "none";
+    more.style.display = isOpen ? "none" : "inline";
+    button.innerText = isOpen ? "Devamını gör" : "Kapat";
+}
+</script>
+
+</body>
+</html>
